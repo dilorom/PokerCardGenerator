@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poker Card Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <h1>Poker Card Generator</h1>
+
+  <div id="controls">
+    <select id="valueSelect">
+      <option>A</option><option>2</option><option>3</option><option>4</option>
+      <option>5</option><option>6</option><option>7</option><option>8</option>
+      <option>9</option><option>10</option><option>J</option>
+      <option>Q</option><option>K</option>
+    </select>
+
+    <select id="suitSelect">
+      <option>♠</option>
+      <option>♣</option>
+      <option>♥</option>
+      <option>♦</option>
+    </select>
+
+    <button onclick="generateSelectedCard()">Generate Card</button>
+    <button onclick="generateRandomCard()">Random Card</button>
+    <button onclick="generateFullDeck()">Full Deck</button>
+    <button onclick="clearTable()">Clear Table</button>
+  </div>
+
+  <main id="playing-cards"></main>
+
+  <script src="cards.js"></script>
+
+</body>
+</html>
